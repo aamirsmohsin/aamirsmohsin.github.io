@@ -1,0 +1,176 @@
+/* General */
+
+body {
+    font-family: poppins;
+    background-color: ghostwhite;
+    padding-top: 50px;  /* Add this line */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Nav-Bar */
+
+nav {
+    background-color: #333;
+    display: flex;  /* Add this line */
+    justify-content: center;  /* Add this line */
+    position: fixed;  /* Make the navbar fixed on the screen */
+    top: 0;  /* Position the navbar at the top of the screen */
+    left: 0;  /* Position the navbar at the left of the screen */
+    right: 0;  /* Make the navbar span the full width of the screen */
+}
+  
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+nav li {
+    float: left;
+}
+  
+nav a {
+    display: block;
+    color: ghostwhite;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.5s;
+    font-weight: 575;
+}
+  
+nav a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #333;  /* Set the background color of the active nav bar item to #333 */
+    color: blue;  /* Set the text color of the active nav bar item to white */
+}
+
+/* Wrappers */
+
+#home.wrapper {
+    width: 600px;
+}
+
+.wrapper {
+    width: 800px;  /* Set a fixed width for the div */
+    margin: 0 auto;  /* Center the div horizontally */
+    display: block;  /* Make the div a block element */
+    padding-top: 10px;
+}
+
+div.header {
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Home */
+
+#home {
+    display: flex;  /* Make the div a flex container */
+    flex-direction: row;  /* Split the div horizontally */
+}
+
+div.left {
+    width: 50%;
+    padding: 8px;
+    text-align: center;
+}
+
+div.right {
+    width: 50%;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+div.right img {
+    border-radius: 50%;
+}
+
+/* Experience + Projects */
+
+.bubble {
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    background-color: white;
+    transition: box-shadow 0.5s;
+}
+
+.bubble ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bubble h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bubble:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.column {
+    display: flex;  /* Make the div a flex container */
+    flex-direction: column;  /* Split the div horizontally */
+}
+
+.experience-heading {
+    display: inline;
+}
+
+.make-row {
+    display: flex;  /* Make the div a flex container */
+    flex-direction: row;  /* Split the div horizontally */
+}
+
+.project-text {
+    width: 70%;
+}
+
+.project-image {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Contact */
+
+#contact {
+    width: 200px;
+}
+
+.contact-wrapper {
+    display: flex;  /* Make the div a flex container */
+    flex-direction: row;  /* Split the div horizontally */
+}
+
+div.email {
+    width: 33.33%;
+    padding: 8px;
+    text-align: center;
+}
+
+div.linkedin {
+    width: 33.33%;
+    padding: 8px;
+    text-align: center;
+}
+
+div.github {
+    width: 33.33%;
+    padding: 8px;
+    text-align: center;
+}
+
+.linkedin a, .email a, .github a {
+    color: #333;
+}
